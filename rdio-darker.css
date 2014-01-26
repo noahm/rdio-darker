@@ -1,0 +1,127 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp('https?://www.rdio.com/(?!home|account|features|pricing|apps|availability|about|careers|press|legal).*') {
+
+/* Hide - {display: none !important;} */
+.Notification.mobile
+    {display: none !important;}
+
+/* Dark BG-color - {background-color: #222 !important; color: #666 !important;} */
+.App_Rdio, .empty_collection, .Search_NotFound, 
+.list_page_search_box, .list_page_search_box .TextInput.search_input,
+.Album .PeopleRow, .Tooltip_Base.deluxe_tooltip, .Tooltip.light .holder .inner,
+.NowPlayingTooltip .footer, .Menu,
+.Catalog_Artist .section .section_bio, .Comments_Editor .editor, .TextInput,
+.Comments_Editor .editor .TrackList, .Search_SuggestionsPopup,
+.Dialog .content.default_dialog, .Catalog_ReviewPage .section, .Menu li
+    {background-color: #222 !important; color: #bcd !important;}
+/* inputs */
+input, textarea
+    {background-color: transparent !important; color: #bcd !important;}
+.section_header
+    {text-shadow:0px 1px 0 black !important;}
+a, .catalog_header, .catalog_header .catalog_name, .section_header
+    {color: #bcd !important;}
+/* accent colors */
+.Station.dark .station_title, .Station.dark .station_info, .Comments_Comment p,
+.Comments_Editor .editor .editor_controls .item_selector:hover,
+.Search_SuggestionsPopup_RowItem:not(.selected) .primary_text,
+.Comments .critic_review .content, .Catalog_ReviewPage .right_sidebar_layout .sidebar,
+.Album .metadata .truncated_line,
+/* new as of 2013-12 */
+.Recommendations_Row > .reason_tile > .type
+    {color: #89a !important;}
+.Search_Box .search_box_container .search_input
+    {background-color: #181818 !important;}
+
+.TextInput.filter
+    {box-shadow: 0 1px 0 0 #444 inset !important;}
+
+/* menu items */
+.Menu li.disabled, .Menu li.disabled:hover
+    { background-color: black !important; color: #555 !important; box-shadow: inset 0 0 5px 4px #222;}
+.Menu
+    {box-shadow: 0 0 5px #333 !important;}
+
+
+/* avoid searing white borders */
+.Menu, .Tooltip_Base.deluxe_tooltip, .Comments_Editor .editor,
+.Comments_Editor .editor .editor_controls, .TrackList.boxed,
+.Comments_Editor .editor .TrackList, .TrackList > .Track,
+.tracklist_toolbar, .Comments_Editor, .Comments_Comment, .Comments .critic_review,
+.Search_SuggestionsPopup .popup_row, .button, .TextInput.filter,
+.Dialog .content.default_dialog .header, .Dialog .content.default_dialog .footer,
+.Tooltip.light .holder .inner,
+/* new as of 2013-10 */
+.divider, .section_overview_header, .tabs, .SourceList .scrollable_content,
+.SourceList .scrollable_content > div, .header,
+/* new as of 2013-12 */
+.SortableTrackList > .ListItem > .Track, .list_page_search_box, .Recommendations_Row > .reason_tile
+    {border-color: #666 !important;}
+.Search_SuggestionsPopup
+    {border-color: #222 !important; box-shadow: 0px 12px 8px 2px #111 !important;}
+/* fix searing white album art placeholders */
+.Album div.album_image, .Grid_Placeholder .content
+    {background-color: #2c2c2c !important;}
+/*fix a quirk*/
+.Comments_Editor .editor .TrackList
+    {height: auto !important;}
+
+/* fix related artist tags*/
+.Catalog_Sidebar_ArtistList ul li a
+    {background-color: black !important; text-shadow: none !important; }
+
+/* Weeks-ago selectors for new releases */
+.ViewToggle li a
+    {background-image: linear-gradient(to bottom, #555, #333) !important;
+    text-shadow: none !important; color: #ddd !important;
+    border-color: #888 !important;}
+.ViewToggle li.selected a, .ViewToggle li.selected a:hover
+    {background-image: linear-gradient(to bottom, #222 20%, #444 90%) !important;}
+
+/* Nice gradients at either end of the page */
+.App_Header
+    {background-image: linear-gradient(to bottom, rgba(50,50,50,1), rgba(38,38,38,0.9)) !important;}
+.Catalog_Artist .section .section_bio a.more
+    {background-image: linear-gradient(to right, rgba(34,34,34,0), #222 30%) !important;}
+/* nothing playing footer, comment footer, dialog footer */
+.App_PlayerFooter.empty, .App_PlayerFooter.fallback,
+.Comments_Editor .editor .editor_controls,
+.Dialog .content.default_dialog .footer
+    {background-image: linear-gradient(to top, rgba(50,50,50,1), rgba(38,38,38,0.95)) !important; background-color: transparent !important;}
+.App_PlayerFooter a
+    { text-shadow: 0 0 3px black; color: #ddd !important; }
+
+/* button cleanup */
+.button:not(.light), .TrackList > .Track.selected
+    {background-color: #333 !important;}
+.button:not(.light)
+    {text-shadow: 0 1px 0 #222 !important; color: #CCC !important; background-image: none !important;}
+/* hover state for buttons and sidebar */
+.button:not(.light):hover, .button:not(.light):focus, .App_PeopleSidebar .Person:hover,
+.App_PeopleSidebar .Person.drop_over,
+.App_MainNav .manual_hover, .App_MainNav .new_playlist .label:hover, .App_MainNav li.drop_over
+    {background-color: #444 !important; background-image: none !important;}
+/* hover state for dropdown */
+.Menu li:hover
+    {background-color: #444 !important;}
+
+/* Uncomment the following to remove the blurred album art from the player */
+/****
+ .Canvas_Blur canvas {
+    display: none !important;
+ }
+ .App_PlayerFooter {
+    background-image: linear-gradient(to top, rgba(50,50,50,1), rgba(38,38,38,0.95)) !important;
+    background-color: transparent !important;
+ }
+ .App_PlayerFooter.footer_exposed {
+    background-image: linear-gradient(to top, rgba(50,50,50,1), rgba(32,32,32,1)) !important;
+ }
+****/
+
+/* Fix the white line in the logo */
+.App_Header_Rdio .logo {
+    background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAEcAAAAcCAYAAAAz+aIrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz AAAOwwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTFH80I3AAADmklE QVRoQ+2YYWRWURjHR4wRIyJiRIwRERGjTzFin0ZEJIqRog+JEWMzIjci9ilGRKQREWlEGiPiMEZE GSUiIuLt+b/Pc7r3nvs/5573zTZlf35a5/k/9973ueece84Z2G51Op2++e/V/ZGF61C8WAz879ot TkK7xUlotzgJZRXnn1LhhoVx4ZJxXjhm0VLiu/Jy8/qF55/m51e/PMG/s28+X7RoV1tenMINCZMC nvOmMC2cFkbN0YPYQwKvwl0VvtZiymVzwHNYeFCJhXwUuv4tG1Z4WYVbFn788Yd4Fe6A/dUidhGg sYVGu3KrG4cKNyXEH6jOCwE9kMX6K472lKWaL4aX/v+esM9aIgovUIIfzdqdMGi55yrtuXwgbYoX i4FQhdsvvKt5UniVbd8EjIw9FglUTa6zTtrApOUdEXJ7TB5eLAaq0h6zWou34dWMbQqzwiFzmJrG FBuWhbzHQezv8WIxUBWGNvOk8GKxkp/CmnC8l+K8Fc7axUcr7TEwfBaF2wLmBEzKzFfixWLAC29Y fwT3KbjffQHP8FRYt+zc33wmxzgnDNtlVYW7UYmH4Ms2Zc5SGNc6vn8JLK+X4qR6DeYRfYkx8bwq GK4yD/GgZ9ouV5e+CebH2xoxF5cWm+X2UpzYJIzCjJkrLp7rWRHsK8YNYEUNRDrEWM4pc8SlQ4Ll 5hWncHuFWO+ToZAhnosXO2EOEzeC+I10dg/9axZNC2+lmat4sRjQWKy474XIJzkQz1+1aEXcCOKr SF6cRYumhd7VzFW8WAxobKTRrjzsxtukayPW816Zo6KmSUmJD6vch3sW5JV4sRjQ2GCjXVnuxtsU n/MemaMibmwrDvYwYc53Ib1nKdxMxd/Ei8WAlw6hMJ5zf2xIY/PVnLkq4sa24lxr+BX0qObuV7ty +/7Hi8WAV/xTjvsHq1yRrqbxYuLLiO6iLxQ3thWnbRGIDeZd4Y6AlXTqoUq8WAx4Fe5oI1aCe2Gp gcUnjizwUvCJZ17Pa7tyIG5OFwfa+e1D6oikV8btqoG4Oac4Y8JObjyxJNioxftjwa5IxBPaiwNh LcRy02DIsfbeigPpIVv8CKSdJbtSRDwprzhQ4U4K7OvBwPiPzxdeLAaY8IVKFZyDHj9jV0iIJ+cX B9IlPU7WYhMvur/f0eMciHn6K46Xfqbbznfwuccu/aBlbaPIAbu0nbDo9ki3FzihxHLDH5ngsH1C GDJXhgYGfgO53+zj+MGJdQAAAABJRU5ErkJggg==") !important;
+}
+}
