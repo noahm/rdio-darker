@@ -1,6 +1,7 @@
 Changes
 -------
 
+2014-02-13 : Fixes white sidebars
 2014-01-26 : Fix text color in drop-down action menus
 2013-12-08 : Update to fix what Rdio style updates broke, fixes white line in Rdio logo
 2013-10-13 : Darken some divider lines, darken placeholder album art while images load, secret fancy styles

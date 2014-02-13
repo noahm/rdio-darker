@@ -15,6 +15,9 @@
 .Comments_Editor .editor .TrackList, .Search_SuggestionsPopup,
 .Dialog .content.default_dialog, .Catalog_ReviewPage .section, .Menu li
     {background-color: #222 !important; color: #bcd !important;}
+/* Remove background colors where not needed */
+.App_MainNav li, .App_PeopleSidebar .Person
+    {background-color: transparent;}
 /* inputs */
 input, textarea
     {background-color: transparent !important; color: #bcd !important;}
@@ -29,7 +32,7 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header
 .Comments .critic_review .content, .Catalog_ReviewPage .right_sidebar_layout .sidebar,
 .Album .metadata .truncated_line,
 /* new as of 2013-12 */
-.Recommendations_Row > .reason_tile > .type
+.Recommendations_Row > .reason_tile > .type, .UserInfoTooltip .holder .footer
     {color: #89a !important;}
 .Search_Box .search_box_container .search_input
     {background-color: #181818 !important;}
@@ -56,7 +59,8 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header
 .divider, .section_overview_header, .tabs, .SourceList .scrollable_content,
 .SourceList .scrollable_content > div, .header,
 /* new as of 2013-12 */
-.SortableTrackList > .ListItem > .Track, .list_page_search_box, .Recommendations_Row > .reason_tile
+.SortableTrackList > .ListItem > .Track, .list_page_search_box, .Recommendations_Row > .reason_tile,
+.UserInfoTooltip .holder .footer
     {border-color: #666 !important;}
 .Search_SuggestionsPopup
     {border-color: #222 !important; box-shadow: 0px 12px 8px 2px #111 !important;}
