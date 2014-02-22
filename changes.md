@@ -1,6 +1,7 @@
 Changes
 -------
 
+2014-02-22 : Fix colors for dialog forms (e.g. playlist settings)
 2014-02-13 : Fixes white sidebars
 2014-01-26 : Fix text color in drop-down action menus
 2013-12-08 : Update to fix what Rdio style updates broke, fixes white line in Rdio logo
