@@ -13,7 +13,9 @@
 .NowPlayingTooltip .footer, .Menu,
 .Catalog_Artist .section .section_bio, .Comments_Editor .editor, .TextInput,
 .Comments_Editor .editor .TrackList, .Search_SuggestionsPopup,
-.Dialog .content.default_dialog, .Catalog_ReviewPage .section, .Menu li
+.Dialog .content.default_dialog, .Catalog_ReviewPage .section, .Menu li,
+/* New catalog pages May 2014 */
+.Catalog2014_Base .divider .divider_title, .Recommendations_Row .paging .more
     {background-color: #222 !important; color: #bcd !important;}
 /* Remove background colors where not needed */
 .App_MainNav li, .App_PeopleSidebar .Person
@@ -23,8 +25,11 @@ input, textarea
     {background-color: transparent !important; color: #bcd !important;}
 .section_header
     {text-shadow:0px 1px 0 black !important;}
-a, .catalog_header, .catalog_header .catalog_name, .section_header
+a, .catalog_header, .catalog_header .catalog_name, .section_header,
+/* New catalog pages May 2014 */
+.Catalog2014_Base .catalog_title, .Catalog2014_Base .divider .divider_title, .Catalog2014_Base .activity_stats .count
     {color: #bcd !important;}
+
 /* accent colors */
 .Station.dark .station_title, .Station.dark .station_info, .Comments_Comment p,
 .Comments_Editor .editor .editor_controls .item_selector:hover,
@@ -33,7 +38,9 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header
 .Album .metadata .truncated_line,
 /* new as of 2013-12 */
 .Recommendations_Row > .reason_tile > .type, .UserInfoTooltip .holder .footer,
-.Dialog_FormDialog .form_list .label, .Dialog_FormDialog .form_list .radio_list label
+.Dialog_FormDialog .form_list .label, .Dialog_FormDialog .form_list .radio_list label,
+/* new May 2014 */
+.small_text
     {color: #89a !important;}
 .Search_Box .search_box_container .search_input
     {background-color: #181818 !important;}
@@ -41,11 +48,18 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header
 .TextInput.filter
     {box-shadow: 0 1px 0 0 #444 inset !important;}
 
+/* Deal with nearly invisible image-based buttons on album page */
+.Catalog2014_Base .controls_wrapper .Widgets_SourceControls
+    {background-color: black; box-shadow: 0px 0px 5px black; padding: 5px;}
+    
 /* menu items */
-.Menu li.disabled, .Menu li.disabled:hover
-    { background-color: black !important; color: #555 !important; box-shadow: inset 0 0 5px 4px #222;}
 .Menu
     {box-shadow: 0 0 5px #333 !important;}
+/* hover state for dropdown */
+.Menu li.option:hover, .Menu a.option:hover
+    {background-color: #444 !important;}
+.Menu li.disabled, .Menu li.disabled:hover
+    { background-color: black !important; color: #555 !important; box-shadow: inset 0 0 5px 4px #222;}
 
 
 /* avoid searing white borders */
@@ -62,7 +76,9 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header
 /* new as of 2013-12 */
 .SortableTrackList > .ListItem > .Track, .list_page_search_box, .Recommendations_Row > .reason_tile,
 .UserInfoTooltip .holder .footer,
-textarea, input[type="button"], input[type="reset"], input[type="submit"], input[type="text"], input[type="email"], input[type="email"], input[type="search"]
+textarea, input[type="button"], input[type="reset"], input[type="submit"], input[type="text"], input[type="email"], input[type="email"], input[type="search"],
+/* New catalog pages May 2014 */
+.Catalog2014_Album .tracks, .NotificationsPage_NotificationsList > .scrollable_content > div, .Recommendations_Row .paging
     {border-color: #666 !important;}
 .Search_SuggestionsPopup
     {border-color: #222 !important; box-shadow: 0px 12px 8px 2px #111 !important;}
@@ -108,9 +124,6 @@ textarea, input[type="button"], input[type="reset"], input[type="submit"], input
 .App_PeopleSidebar .Person.drop_over,
 .App_MainNav .manual_hover, .App_MainNav .new_playlist .label:hover, .App_MainNav li.drop_over
     {background-color: #444 !important; background-image: none !important;}
-/* hover state for dropdown */
-.Menu li:hover
-    {background-color: #444 !important;}
 
 /* Uncomment the following to remove the blurred album art from the player */
 /****

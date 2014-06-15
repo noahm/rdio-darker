@@ -1,6 +1,7 @@
 Changes
 -------
 
+2014-06-15 : Fix coloring on a number of elements, including Rdio's new album page
 2014-02-22 : Fix colors for dialog forms (e.g. playlist settings)
 2014-02-13 : Fixes white sidebars
 2014-01-26 : Fix text color in drop-down action menus
