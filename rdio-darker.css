@@ -130,11 +130,11 @@ textarea, input[type="button"], input[type="reset"], input[type="submit"], input
     {text-shadow: 0 1px 0 #222 !important; color: #CCC !important; background-image: none;}
 /* hover state for buttons and sidebar */
 .App_MainNav li a, .App_PeopleSidebar .Person
-    {border-radius: 5px; background-color: transparent;}
+    {border-radius: 5px; background-color: transparent !important;}
 .button:not(.light):hover, .button:not(.light):focus,
 .App_MainNav li.manual_hover a, .App_MainNav li.drop_over a,
 .App_PeopleSidebar .Person:hover, .App_PeopleSidebar .Person.drop_over
-    {transition: background-color 125ms linear 0s; background-color: #444;}
+    {transition: background-color 125ms linear 0s; background-color: #444 !important;}
 
 /* Uncomment the following to remove the blurred album art from the player */
 /****
