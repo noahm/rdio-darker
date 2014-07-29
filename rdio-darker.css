@@ -18,7 +18,7 @@
 .Catalog2014_Base .divider .divider_title, .Recommendations_Row .paging .more
     {background-color: #222 !important; color: #bcd !important;}
 /* Remove background colors where not needed */
-.App_MainNav li, .App_PeopleSidebar .Person
+.App_PeopleSidebar .Person
     {background-color: transparent;}
 /* inputs */
 input, textarea
@@ -78,7 +78,9 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header,
 .UserInfoTooltip .holder .footer,
 textarea, input[type="button"], input[type="reset"], input[type="submit"], input[type="text"], input[type="email"], input[type="email"], input[type="search"],
 /* New catalog pages May 2014 */
-.Catalog2014_Album .tracks, .NotificationsPage_NotificationsList > .scrollable_content > div, .Recommendations_Row .paging
+.Catalog2014_Album .tracks, .NotificationsPage_NotificationsList > .scrollable_content > div, .Recommendations_Row .paging,
+/* New sidebar links July 2014 */
+.NowPlayingTooltip .footer
     {border-color: #666 !important;}
 .Search_SuggestionsPopup
     {border-color: #222 !important; box-shadow: 0px 12px 8px 2px #111 !important;}
@@ -116,14 +118,16 @@ textarea, input[type="button"], input[type="reset"], input[type="submit"], input
 
 /* button cleanup */
 .button:not(.light), .TrackList > .Track.selected
-    {background-color: #333 !important;}
+    {background-color: #333;}
 .button:not(.light)
-    {text-shadow: 0 1px 0 #222 !important; color: #CCC !important; background-image: none !important;}
+    {text-shadow: 0 1px 0 #222 !important; color: #CCC !important; background-image: none;}
 /* hover state for buttons and sidebar */
-.button:not(.light):hover, .button:not(.light):focus, .App_PeopleSidebar .Person:hover,
-.App_PeopleSidebar .Person.drop_over,
-.App_MainNav .manual_hover, .App_MainNav .new_playlist .label:hover, .App_MainNav li.drop_over
-    {background-color: #444 !important; background-image: none !important;}
+.App_MainNav li a, .App_PeopleSidebar .Person
+    {border-radius: 5px; background-color: transparent;}
+.button:not(.light):hover, .button:not(.light):focus,
+.App_MainNav li.manual_hover a, .App_MainNav li.drop_over a,
+.App_PeopleSidebar .Person:hover, .App_PeopleSidebar .Person.drop_over
+    {transition: background-color 125ms linear 0s; background-color: #444;}
 
 /* Uncomment the following to remove the blurred album art from the player */
 /****
