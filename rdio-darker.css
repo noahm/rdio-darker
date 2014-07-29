@@ -30,17 +30,24 @@ a, .catalog_header, .catalog_header .catalog_name, .section_header,
 .Catalog2014_Base .catalog_title, .Catalog2014_Base .divider .divider_title, .Catalog2014_Base .activity_stats .count
     {color: #bcd !important;}
 
+.notifications_button, .settings_button {
+    background-color: black !important;
+    border-radius: 15px;
+}
+
 /* accent colors */
 .Station.dark .station_title, .Station.dark .station_info, .Comments_Comment p,
 .Comments_Editor .editor .editor_controls .item_selector:hover,
 .Search_SuggestionsPopup_RowItem:not(.selected) .primary_text,
 .Comments .critic_review .content, .Catalog_ReviewPage .right_sidebar_layout .sidebar,
-.Album .metadata .truncated_line,
 /* new as of 2013-12 */
 .Recommendations_Row > .reason_tile > .type, .UserInfoTooltip .holder .footer,
 .Dialog_FormDialog .form_list .label, .Dialog_FormDialog .form_list .radio_list label,
 /* new May 2014 */
-.small_text
+.small_text,
+/* new July 2014 */
+.Profile_Header .location, .Profile_Header .bottom a, .Album .artist_title, .Album .num_songs_row, .user_nav .station_row,
+.App_MainNav li a
     {color: #89a !important;}
 .Search_Box .search_box_container .search_input
     {background-color: #181818 !important;}
@@ -80,7 +87,7 @@ textarea, input[type="button"], input[type="reset"], input[type="submit"], input
 /* New catalog pages May 2014 */
 .Catalog2014_Album .tracks, .NotificationsPage_NotificationsList > .scrollable_content > div, .Recommendations_Row .paging,
 /* New sidebar links July 2014 */
-.NowPlayingTooltip .footer
+.NowPlayingTooltip .footer, .RecentActivity_Widget .activity_item, .Profile_Header .bottom
     {border-color: #666 !important;}
 .Search_SuggestionsPopup
     {border-color: #222 !important; box-shadow: 0px 12px 8px 2px #111 !important;}
