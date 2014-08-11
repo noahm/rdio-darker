@@ -1,6 +1,7 @@
 Changes
 -------
 
+2014-08-11 : Fix album activity summary & album share dialog
 2014-07-29 : Fix sidebar coloring, misc cleanup
 2014-06-15 : Fix coloring on a number of elements, including Rdio's new album page
 2014-02-22 : Fix colors for dialog forms (e.g. playlist settings)
